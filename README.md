@@ -15,21 +15,7 @@ This repository provides a field-oriented control (FOC) script for permanent mag
 ### Park Transformation Matrix ($abc \to dq0$)
 
 $$
-\begin{bmatrix}
-i_d \\
-i_q
-\end{bmatrix}
-=
-\frac{2}{3}
-\begin{bmatrix}
-\cos\theta_e & \cos\left(\theta_e - \frac{2\pi}{3}\right) & \cos\left(\theta_e + \frac{2\pi}{3}\right) \\
--\sin\theta_e & -\sin\left(\theta_e - \frac{2\pi}{3}\right) & -\sin\left(\theta_e + \frac{2\pi}{3}\right)
-\end{bmatrix}
-\begin{bmatrix}
-i_a \\
-i_b \\
-i_c
-\end{bmatrix}
+\begin{bmatrix} i_d \\ i_q \end{bmatrix} = \frac{2}{3} \begin{bmatrix} \cos\theta_e & \cos\left(\theta_e - \frac{2\pi}{3}\right) & \cos\left(\theta_e + \frac{2\pi}{3}\right) \\ -\sin\theta_e & -\sin\left(\theta_e - \frac{2\pi}{3}\right) & -\sin\left(\theta_e + \frac{2\pi}{3}\right) \end{bmatrix} \begin{bmatrix} i_a \\ i_b \\ i_c \end{bmatrix}
 $$
 
 ### Electromagnetic Torque Equation
